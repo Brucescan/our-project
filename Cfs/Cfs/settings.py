@@ -52,16 +52,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Cfs.wsgi.application'
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'HOST': '192.168.106.3',
-#         'PORT': '5432',
-#         'USER': 'postgres',
-#         'PASSWORD': '787866554',
-#         'NAME': 'project',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+        'USER': 'postgres',
+        'PASSWORD': '787866554',
+        'NAME': 'project',
+    }
+}
 
 AUTH_PASSWORD_VALIDATORS = [
     {
