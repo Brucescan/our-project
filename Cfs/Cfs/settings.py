@@ -52,16 +52,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Cfs.wsgi.application'
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-        'USER': 'postgres',
-        'PASSWORD': '787866554',
-        'NAME': 'project',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'HOST': '192.168.106.3',
+#         'PORT': '5432',
+#         'USER': 'postgres',
+#         'PASSWORD': '787866554',
+#         'NAME': 'project',
+#     }
+# }
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -90,7 +90,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    'statics'
+    'static'
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
@@ -118,4 +118,8 @@ SESSION_COOKIE_HTTPONLY = True  # 是否Session的cookie只支持http传输
 SESSION_COOKIE_AGE = 1209600  # Session的cookie失效日期（2周）
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False  # 是否关闭浏览器使得Session过期
-SESSION_SAVE_EVERY_REQUEST = True  # 是否每次请求都保存Session，默认修改之后才保存
+SESSION_SAVE_EVERY_REQUEST = False  # 是否每次请求都保存Session，默认修改之后才保存
+
+LOGIN_MID_WHITE_LIST = [
+
+]
