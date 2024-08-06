@@ -23,21 +23,11 @@
 <body>
     <!-- 顶部开始 -->
     <div class="container">
-        <div class="logo"><a href="/static/index.html">X-admin v2.1</a></div>
+        <div class="logo"><a href="/static/index.html">校园觅食</a></div>
         <div class="left_open">
             <i title="展开左侧栏" class="iconfont">&#xe699;</i>
         </div>
-        <ul class="layui-nav left fast-add" lay-filter="">
-          <li class="layui-nav-item">
-            <a href="javascript:;">+新增</a>
-            <dl class="layui-nav-child"> <!-- 二级菜单 -->
-              <dd><a onclick="x_admin_show('资讯','https://www.baidu.com')"><i class="iconfont">&#xe6a2;</i>资讯</a></dd>
-              <dd><a onclick="x_admin_show('图片','https://www.baidu.com')"><i class="iconfont">&#xe6a8;</i>图片</a></dd>
-               <dd><a onclick="x_admin_show('用户','https://www.baidu.com')"><i class="iconfont">&#xe6b8;</i>用户</a></dd>
-               <dd><a onclick="x_admin_add_to_tab('在tab打开','https://www.baidu.com',true)"><i class="iconfont">&#xe6b8;</i>在tab打开</a></dd>
-            </dl>
-          </li>
-        </ul>
+        
         <ul class="layui-nav right" lay-filter="">
           <li class="layui-nav-item">
             <a href="javascript:;">admin</a>
@@ -53,105 +43,58 @@
     </div>
     <!-- 顶部结束 -->
     <!-- 中部开始 -->
-     <!-- 左侧菜单开始 -->
+    <!-- 左侧菜单开始 -->
     <div class="left-nav">
       <div id="side-nav">
-        <ul id="nav">
+        <ul id="nav" >
             <li>
                 <a href="javascript:;">
-                    <i class="iconfont">&#xe6b8;</i>
-                    <cite>会员管理</cite>
+                    <i class="iconfont">&#xe722;</i>
+                    <cite>美食</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
                 </a>
                 <ul class="sub-menu">
                     <li date-refresh="1">
                         <a _href="member-list.html">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>会员列表(静态表格)</cite>
-                            
+                            <cite>校内美食</cite>
                         </a>
                     </li >
                     <li>
                         <a _href="member-list1.html">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>会员列表(动态表格)</cite>
+                            <cite>校外美食</cite>
                             
                         </a>
                     </li >
-                    <li date-refresh="1">
-                        <a _href="member-del.html">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>会员删除</cite>
-                            
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="iconfont">&#xe70b;</i>
-                            <cite>会员管理</cite>
-                            <i class="iconfont nav_right">&#xe697;</i>
-                        </a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a _href="xxx.html">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>会员列表</cite>
-                                    
-                                </a>
-                            </li >
-                            <li>
-                                <a _href="xx.html">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>会员删除</cite>
-                                    
-                                </a>
-                            </li>
-                            <li>
-                                <a _href="xx.html">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>等级管理</cite>
-                                    
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </li>
                 </ul>
             </li>
             <li>
                 <a href="javascript:;">
-                    <i class="iconfont">&#xe723;</i>
-                    <cite>订单管理</cite>
+                    <i class="iconfont">&#xe6a0;</i>
+                    <cite>我的收藏</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
                 </a>
                 <ul class="sub-menu">
                     <li>
                         <a _href="order-list.html">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>订单列表</cite>
+                            <cite>默认收藏夹</cite>
                         </a>
                     </li >
                 </ul>
             </li>
             <li>
-                <a href="javascript:;">
-                    <i class="iconfont">&#xe723;</i>
-                    <cite>分类管理</cite>
+                <a href="javascript:;" class="right-expand">
+                    <i class="iconfont">&#xe705;</i>
+                    <cite>浏览记录</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
                 </a>
-                <ul class="sub-menu">
-                    <li>
-                        <a _href="cate.html">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>多级分类</cite>
-                        </a>
-                    </li >
-                </ul>
             </li>
             <li>
                 <a href="javascript:;">
                     <i class="iconfont">&#xe723;</i>
-                    <cite>城市联动</cite>
+                    <cite>我的</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
                 </a>
                 <ul class="sub-menu">
@@ -319,9 +262,7 @@
     <!-- 右侧主体结束 -->
     <!-- 中部结束 -->
     <!-- 底部开始 -->
-    <div class="footer">
-        <div class="copyright">Copyright ©2017 x-admin v2.3 All Rights Reserved</div>  
-    </div>
+    
     <!-- 底部结束 -->
     <script>
     //百度统计可去掉

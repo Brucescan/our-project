@@ -8,6 +8,7 @@ from django.db import models
 #     密码
 #     性别
 #     手机号
+#     用户权限标识
 #
 # 店铺表：
 #     店铺ID
@@ -52,6 +53,10 @@ class Users(models.Model):
     user_gender = models.CharField(max_length=1)
     # 手机号
     user_phone_number = models.IntegerField()
+    # 用户权限标识
+    user_permissions = models.IntegerField(null=False)
+    # 绑定的店铺
+    user_shop = models.ForeignKey(to='Shops', on_delete=models.DO_NOTHING, null=True)
 
 
 # 店铺表
