@@ -50,6 +50,7 @@ class Users(models.Model):
     user_account = models.CharField(null=False, unique=True, max_length=10)
     # 密码
     user_password = models.CharField(null=False, max_length=15)
+
     # 绑定的角色表
     user_roles = models.OneToOneField(to='Roles', on_delete=models.CASCADE, null=False)
 
@@ -115,19 +116,19 @@ class Shops(models.Model):
     shop_phone_number = models.IntegerField()
     # 地铺地址
 
-# 菜单表
+# 菜表
 class Cuisines(models.Model):
     class Meta:
         db_table = 'sys_cuisines'
 
-    # 菜单名
-    menu_name = models.CharField(null=False, unique=True, max_length=10)
-    # 菜单评分
-    menu_overall_rating = models.IntegerField()
-    # 菜单价格
-    menu_price = models.IntegerField()
-    # 菜单-店铺：一个店铺可以有多个菜，所以 多对一的关系
-    menu_shop = models.ForeignKey(to="Shops", db_column='menu_shop_id', on_delete=models.DO_NOTHING, null=False)
+    # 菜名
+    cuisines_name = models.CharField(null=False, unique=True, max_length=10)
+    # 菜评分
+    cuisines_overall_rating = models.IntegerField()
+    # 菜价格
+    cuisines_price = models.IntegerField()
+    # 菜-店铺：一个店铺可以有多个菜，所以 多对一的关系
+    cuisines_shop = models.ForeignKey(to="Shops", db_column='cuisines_shop_id', on_delete=models.DO_NOTHING, null=False)
 
 # 评论表
 class Comments(models.Model):
